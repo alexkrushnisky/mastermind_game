@@ -1,2 +1,3 @@
-# mastermind_game
-A browser-based game of Mastermind (Code Breaker)
+# Mastermind (Code Breaker)
+
+A browser-based game of Mastermind.

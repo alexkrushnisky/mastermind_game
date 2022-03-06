@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div id="myModal" class="modal">
+            <div class="modalContent">
+                <h1 id="winText"></h1>
+                <button id="tryAgain" type="button">Try again</button>
+            </div>
+        </div>
+
+        <table id="hintBoard">
+            <tr>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h1" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h2" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h3" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h4" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h5" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h6" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h7" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h8" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h9" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h10" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h11" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h12" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h1" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h2" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h3" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h4" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h5" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h6" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h7" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h8" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h9" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h10" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h11" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h12" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h1" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h2" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h3" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h4" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h5" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h6" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h7" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h8" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h9" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h10" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h11" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h12" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h1" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h2" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h3" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h4" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h5" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h6" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h7" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h8" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h9" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h10" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h11" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h12" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h1" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h2" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h3" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h4" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h5" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h6" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h7" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h8" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h9" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h10" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h11" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h12" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h1" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h2" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h3" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h4" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h5" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h6" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h7" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h8" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h9" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h10" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h11" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="16" height="16">
+                        <circle class="h12" cx="8" cy="8" r="5" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="b1" type="button">Submit</button>
+                </td>
+                <td>
+                    <button id="b2" type="button">Submit</button>
+                </td>
+                <td>
+                    <button id="b3" type="button">Submit</button>
+                </td>
+                <td>
+                    <button id="b4" type="button">Submit</button>
+                </td>
+                <td>
+                    <button id="b5" type="button">Submit</button>
+                </td>
+                <td>
+                    <button id="b6" type="button">Submit</button>
+                </td>
+                <td>
+                    <button id="b7" type="button">Submit</button>
+                </td>
+                <td>
+                    <button id="b8" type="button">Submit</button>
+                </td>
+                <td>
+                    <button id="b9" type="button">Submit</button>
+                </td>
+                <td>
+                    <button id="b10" type="button">Submit</button>
+                </td>
+                <td>
+                    <button id="b11" type="button">Submit</button>
+                </td>
+                <td>
+                    <button id="b12" type="button">Submit</button>
+                </td>
+            </tr>
+        </table>
+        
+        <table id="gameBoard">
+
+            <colgroup id="activeColumn">
+                <col span="1" style="background-color:rgb(204, 204, 204)">
+                <col span="11" style="background-color:rgb(150, 150, 150)">
+            </colgroup>
+
+            <tr>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g1" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g2" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g3" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g4" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g5" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g6" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g7" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g8" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g9" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g10" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g11" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g12" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g1" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g2" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g3" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g4" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g5" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g6" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g7" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g8" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g9" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g10" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g11" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g12" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g1" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g2" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g3" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g4" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g5" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g6" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g7" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g8" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g9" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g10" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g11" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g12" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g1" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g2" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g3" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g4" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g5" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g6" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g7" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g8" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g9" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g10" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g11" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g12" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g1" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g2" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g3" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g4" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g5" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g6" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g7" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g8" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g9" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g10" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g11" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g12" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g1" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g2" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g3" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g4" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g5" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g6" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g7" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g8" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g9" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g10" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g11" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="40" height="40">
+                        <circle class="g12" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="grey"/>
+                    </svg>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="12" style="background-color:rgb(150, 150, 150); border-top:1px solid black; vertical-align:middle">
+                    <p>Pick a color:</p>
+                    <svg width="40" height="40">
+                        <circle class="pinPalette" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="white"/>
+                    </svg>
+                    <svg width="40" height="40">
+                        <circle class="pinPalette" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="pink"/>
+                    </svg>
+                    <svg width="40" height="40">
+                        <circle class="pinPalette" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="red"/>
+                    </svg>
+                    <svg width="40" height="40">
+                        <circle class="pinPalette" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="orange"/>
+                    </svg>
+                    <svg width="40" height="40">
+                        <circle class="pinPalette" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="yellow"/>
+                    </svg>
+                    <svg width="40" height="40">
+                        <circle class="pinPalette" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="green"/>
+                    </svg>
+                    <svg width="40" height="40">
+                        <circle class="pinPalette" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="blue"/>
+                    </svg>
+                    <svg width="40" height="40">
+                        <circle class="pinPalette" cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="black"/>
+                    </svg>
+                </td>
+            </tr>
+        </table>
+
+        <script src="mastermind_svg.js"></script>
+
+    </body>
+
+</html>
