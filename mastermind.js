@@ -24,8 +24,8 @@ color is one of:
 - "black"
 Interp. the color of a game pin.
 
-listOfPins is an array of length 6:
-Interp. array of 6 colors where index of array represents position
+listOfPins is an array of length 5:
+Interp. array of 5 colors where index of array represents position
 of pin.
 
 hint is one of:
@@ -77,7 +77,7 @@ generateCombo = () => {
     */
     let listOfPins = [];
     let i;
-    for(i=0; i<6; i++) {
+    for(i=0; i<5; i++) {
         nb = Math.floor(Math.random() * 7);
         c = assignColor(nb);
         listOfPins.push(c)
